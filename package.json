@@ -1,0 +1,52 @@
+{
+  "name": "toda-google-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toda93/google-api.git"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": "^6.0.0"
+  },
+  "keywords": [
+    "toda",
+    "nodejs",
+    "google api",
+    "google scaper"
+  ],
+  "author": "toda <sp.azsolution.net@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toda93/google-api/issues"
+  },
+  "homepage": "https://github.com/toda93/google-api#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.7.6",
+    "toda-http-client": "^1.0.7",
+    "read-chunk": "~3.2.0",
+    "mime-types": "~2.1.25"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "scripts": {
+    "pretest": "babel src --out-dir lib",
+    "test": "node lib/test.js",
+    "prepublish": "babel src --out-dir lib"
+  }
+}

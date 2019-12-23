@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+!.gitignore
+/lib/
+/node_modules/
+yarn.lock
+yarn-error.log
+package-lock.json
