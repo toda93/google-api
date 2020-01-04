@@ -1,9 +1,8 @@
-import FacebookOAuth2API from './FacebookOAuth2API';
-import FacebookAPI from './FacebookAPI';
-import FacebookScraper from './FacebookScraper';
+import GoogleOAuth2API from './GoogleOAuth2API';
+import GoogleDriveAPI from './GoogleDriveAPI';
+
 
 export {
-    FacebookOAuth2API,
-    FacebookAPI,
-    FacebookScraper
+    GoogleOAuth2API,
+    GoogleDriveAPI,
 }

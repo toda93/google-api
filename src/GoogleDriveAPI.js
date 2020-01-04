@@ -34,6 +34,7 @@ class GoogleDriveAPI extends GoogleOAuth2API {
             q: `name = "${name}" and trashed = false`,
             files: 'files(id,name)',
         });
+
         if (json.files.length > 0) {
             return json.files[0];
         }
@@ -172,6 +173,8 @@ class GoogleDriveAPI extends GoogleOAuth2API {
 
     async _getClient() {
         const token = await this.refreshToken();
+
+        console.log('token', token);
 
         return new HttpClient({
             headers: {

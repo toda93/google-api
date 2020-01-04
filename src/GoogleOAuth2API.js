@@ -27,7 +27,7 @@ class GoogleOAuth2API {
     }
 
     getTimeNow() {
-        Math.round((new Date()).getTime() / 1000);
+        return Math.round((new Date()).getTime() / 1000);
     }
 
     getUrlAuthCode() {
@@ -66,8 +66,8 @@ class GoogleOAuth2API {
             throw new ErrorException('GOOGLE_OAUTH_REFRESH_TOKEN', {
                 msg: 'No token'
             });
-
         }
+
         if (!this.token.expired || this.token.expired <= this.getTimeNow()) {
 
             const client = new HttpClient();
@@ -87,10 +87,6 @@ class GoogleOAuth2API {
             this.token.expired = this.getTimeNow() + (json.expires_in - 500);
         }
         return this.token;
-    }
-
-    _getTimeUnixNow() {
-        return
     }
 }
 
