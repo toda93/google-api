@@ -1,7 +1,7 @@
 import querystring from 'querystring';
 
 import HttpClient from 'toda-http-client';
-import {ErrorException} from './ErrorException';
+import {ErrorException} from 'toda-error';
 
 const OAUTH_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth';
 const OAUTH_TOKEN_ENDPOINT = 'https://www.googleapis.com/oauth2/v4/token';

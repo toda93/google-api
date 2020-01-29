@@ -2,10 +2,10 @@ import mime from 'mime-types';
 import fs from 'fs';
 import path from 'path';
 import readChunk from 'read-chunk';
+import HttpClient from 'toda-http-client';
+import {ErrorException} from 'toda-error';
 
 import GoogleOAuth2API from './GoogleOAuth2API';
-import HttpClient from 'toda-http-client';
-import {ErrorException} from './ErrorException';
 
 const UPLOAD_ENDPOINT = 'https://www.googleapis.com/upload/drive/v3/files';
 const DRIVE_ENDPOINT = 'https://www.googleapis.com/drive/v3/files';
