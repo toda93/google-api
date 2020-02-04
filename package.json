@@ -1,6 +1,6 @@
 {
   "name": "toda-google-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "lib/index.js",
   "repository": {
@@ -24,25 +24,28 @@
   },
   "homepage": "https://github.com/toda93/google-api#readme",
   "dependencies": {
-    "@babel/runtime": "^7.7.6",
-    "toda-error": "^1.0.7",
+    "toda-error": "^1.1.2",
     "toda-http-client": "^1.0.7",
     "read-chunk": "~3.2.0",
     "mime-types": "~2.1.25"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.7.5",
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
     "@babel/plugin-transform-async-to-generator": "^7.7.4",
-    "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.6"
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-runtime"
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
     ]
   },
   "scripts": {
