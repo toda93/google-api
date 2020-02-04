@@ -2,8 +2,8 @@ import mime from 'mime-types';
 import fs from 'fs';
 import path from 'path';
 import readChunk from 'read-chunk';
-import HttpClient from 'toda-http-client';
-import {ErrorException} from 'toda-error';
+import HttpClient from '@azteam/http-client';
+import {ErrorException} from '@azteam/error';
 
 import GoogleOAuth2API from './GoogleOAuth2API';
 
