@@ -4,6 +4,10 @@ import path from 'path';
 import readChunk from 'read-chunk';
 import HttpClient from '@azteam/http-client';
 import {ErrorException} from '@azteam/error';
+import {timeout} from '@azteam/ultilities';
+
+
+
 
 import GoogleOAuth2API from './GoogleOAuth2API';
 
@@ -185,8 +189,3 @@ class GoogleDriveAPI extends GoogleOAuth2API {
 }
 
 export default GoogleDriveAPI;
-
-
-function timeout(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
