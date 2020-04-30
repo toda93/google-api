@@ -28,7 +28,7 @@ class GoogleDriveAPI extends GoogleOAuth2API {
             metadata.parents = [parent];
         }
 
-        return client.postJSON(DRIVE_ENDPOINT, metadata);
+        return client.post(DRIVE_ENDPOINT, metadata, false);
     }
 
     async findFolder(name) {
