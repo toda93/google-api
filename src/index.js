@@ -1,8 +1,6 @@
-import GoogleOAuth2API from './GoogleOAuth2API';
-import GoogleDriveAPI from './GoogleDriveAPI';
+import GoogleAuthClient from './GoogleAuthClient';
 
 
 export {
-    GoogleOAuth2API,
-    GoogleDriveAPI,
+    GoogleAuthClient
 }
