@@ -16,7 +16,7 @@ class GoogleAuthClient {
         });
 
 
-        if (res.azp && appIds.includes(res.azp)) {
+        if (res.azp && this.appIds.includes(res.azp)) {
             return {
                 id: res.sub,
                 email: res.email,
