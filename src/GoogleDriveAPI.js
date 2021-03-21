@@ -4,7 +4,7 @@ import path from 'path';
 import readChunk from 'read-chunk';
 import HttpClient from '@azteam/http-client';
 import {ErrorException} from '@azteam/error';
-import {timeout} from '@azteam/ultilities';
+import {timeout} from '@azteam/util';
 
 
 
