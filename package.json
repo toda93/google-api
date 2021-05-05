@@ -1,6 +1,6 @@
 {
     "name": "@azteam/google-api",
-    "version": "1.0.73",
+    "version": "1.0.74",
     "description": "",
     "main": "src/index.js",
     "repository": {
@@ -25,7 +25,7 @@
     "homepage": "https://github.com/toda93/google-api#readme",
     "dependencies": {
         "@azteam/error": "1.0.15",
-        "@azteam/http-client": "1.0.66",
+        "@azteam/http-client": "1.0.71",
         "@azteam/util": "1.0.3",
         "mime-types": "~2.1.25",
         "read-chunk": "~3.2.0"
